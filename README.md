@@ -1,6 +1,8 @@
 # random_quote_mahcine
 Free code camp's 1st React project
 
+Goal is to create to a website that responds with random quotes when interacted with.  Additional criteria provided through the site.
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
