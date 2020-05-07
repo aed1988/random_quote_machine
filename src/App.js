@@ -21,7 +21,7 @@ class App extends React.Component {
           onClick={() => this.handleClick()}
           author = {this.state.author}
           quote = {this.state.quote}
-         /> 
+         />
     )
   }
   

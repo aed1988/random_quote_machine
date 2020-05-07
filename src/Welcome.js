@@ -3,13 +3,18 @@ import React from 'react'
 class Welcome extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Welcome</h1>
-        <button 
-          onClick={this.props.onClick}
-          className='effect effect-1'
-        >New quote!</button>
-      </div>
+      <>
+        <div class="uk-container">
+          <div class="uk-card uk-card-body uk-card-primary">
+            <h1>Welcome</h1>
+            <button
+              id="welcome"
+              onClick={() => this.props.onClick()}
+              className='uk-button uk-button-default'
+            >New quote!</button>
+          </div>
+        </div>
+      </>
     )
   }
 }
