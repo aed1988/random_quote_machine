@@ -4,8 +4,8 @@ class Welcome extends React.Component {
   render() {
     return (
       <>
-        <div class="uk-container">
-          <div class="uk-card uk-card-body uk-card-primary">
+        <div className="uk-container">
+          <div className="uk-card uk-card-body uk-card-primary">
             <h1>Welcome</h1>
             <button
               id="welcome"

@@ -1,11 +1,12 @@
 import React from 'react'
+import Add from './Buttons/Add'
 
 class Quote extends React.Component {
   render() {
     return (
       <>
-        <div class="uk-container">
-          <div class="uk-card uk-card-body uk-card-primary">
+        <div className="uk-container">
+          <div className="uk-card uk-card-body uk-card-primary">
             <h1 id="text">"{this.props.quote}"</h1>
             <h4 id="author">- {this.props.author}</h4>
             <h6>{this.props.number}</h6>
@@ -15,7 +16,9 @@ class Quote extends React.Component {
               className='uk-button uk-button-default'
             >New quote!</button>
             <br />
-            <a href="twitter.com/intent/tweet">Tweet</a>
+            <div id="buttons" className='uk-margin'></div>
+              <Add />
+              <a href="#" className="uk-icon-button" uk-icon="icon: twitter"></a>
             </div>
         </div>
       </>
