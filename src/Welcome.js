@@ -11,7 +11,7 @@ class Welcome extends React.Component {
               id="welcome"
               onClick={() => this.props.onClick()}
               className='uk-button uk-button-default'
-            >New quote!</button>
+            >Get a quote!</button>
           </div>
         </div>
       </>
