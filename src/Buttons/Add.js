@@ -1,15 +1,11 @@
 import React, {useState} from 'react'
 
-const Add = () => {
+const Add = (props) => {
 
   const [newQuote, setNewQuote] = useState(''),
         [newAuthor, setNewAuthor] = useState('');
 
-  const validateAndSubmit = () => {
-    if (newQuote === "" || newAuthor === "") return alert('Please ensure a quote and an author are entered')
-
-    console.log(`Quote: ${newQuote}.  Author:${newAuthor}`)
-  }
+  
 
   return (
     <>
@@ -30,7 +26,7 @@ const Add = () => {
 
                 <p className="uk-text-right">
                   <button className="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                  <button className="uk-button uk-button-primary" type="button" onClick={() => validateAndSubmit()}>Submit</button>
+                  <button id="submit" className="uk-button uk-button-primary" type="button">Submit</button>
                 </p>
 
             </fieldset>
