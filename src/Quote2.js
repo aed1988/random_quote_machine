@@ -1,5 +1,4 @@
 import React from 'react'
-import Add from './Buttons/Add'
 
 const Quote2 = (props) => {
 
@@ -16,6 +15,7 @@ const Quote2 = (props) => {
             >New quote!</button>
             <br />
             <div id="buttons" className='uk-margin'></div>
+            {/* eslint-disable-next-line */}
               <a href="#" className="uk-icon-button" uk-icon="icon: twitter"></a>
             </div>
         </div>
