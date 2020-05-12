@@ -1,10 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Welcome from './Welcome';
 import Quote2 from './Quote2';
 
 const Content = () => {
 
   const [content, setContent] = useState({quote: '', author: ''})
+
+  useEffect(() => {
+    localStorage.setItem('quote', `Quote: ${content.quote}`)
+    localStorage.setItem('author', `Author: ${content.author}`)
+    return () => {
+      localStorage.removeItem('quote')
+      localStorage.removeItem('author')
+    }
+  }, [content])
 
   const updateContent = (target) => {
     const quotesArr = [
@@ -37,9 +46,6 @@ const Content = () => {
 
   }
 
-  const addQuote = (quote, author) => {
-    console.log(`Quote: ${quote}.  Author:${author}`)
-  }
   return (
     (!content.author && !content.quote) 
       ? <Welcome onClick={updateContent}/> 
